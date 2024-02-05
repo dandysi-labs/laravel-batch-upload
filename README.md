@@ -135,7 +135,7 @@ Create and dispatch a batch straight away:
 ```bash
 php artisan batch-uploads:create create_categories /data/categories.csv --force-dispatch
 ```
-> delay by minutes `--delay=60` or indentify with a user `--user=user123`. (Any delay will require the step [Scheduled Batches](#scheduled-batches) to be in place)
+> delay by minutes `--delay=60` or indentify with a user `--user=user123`. Delays will require the step [Scheduled Batches](#scheduled-batches) outlined above to be in place.
 
 ## License
 
