@@ -1,6 +1,6 @@
 {
     "name": "dandysi/laravel-batch-upload",
-    "description": "s",
+    "description": "A framework to help manage/automate/process data uploads (such as CSV), using your business logic",
     "keywords": ["php", "laravel", "upload", "batch"],
     "type": "library",
     "license": "MIT",

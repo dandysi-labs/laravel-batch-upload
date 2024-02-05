@@ -1,9 +1,9 @@
 # Laravel Batch Upload
 
-A framework to help manage/automate/process data uploads (like CSV), utilising your business logic, with potential to be much more than just a tool for updating the database.
+A framework to help manage/automate/process data uploads (such as CSV), using your business logic. It has potential to be much more than just a databse update tool.
 
 * __Scheduling__ - Define when you would like uploads to be processed
-* __Validation__ - Add rules to ensure data is valid before being processed and feedback what the failures are
+* __Validation__ - Add rules to ensure that data is valid before being processed and provide feedback on any failures
 * __Configurable__ - Global or granular per processor
 * __Headless__ - Create the frontend and approval process to suite your exact needs
 
