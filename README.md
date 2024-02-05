@@ -87,7 +87,7 @@ $service->dispatch($batch);
 ```
 If validation errors occur, they will be recorded against each row and the status of the batch/row will reflect this.
 
-## <a id="scheduled-batches"></a>Scheduled Batches
+## Scheduled Batches
 
 Schedule batches with an additional option and not performing step 3 above.
 
@@ -98,7 +98,7 @@ $options = $service
 ;
 ```
 
-To ensure scheduled batches are dispatched you will need to add a schedule command in the console kernel:
+<a id="dispatch-command"></a>To ensure scheduled batches are dispatched you will need to add a schedule command in the console kernel:
 
 ```php
 class Kernel extends ConsoleKernel
@@ -135,7 +135,7 @@ Create and dispatch a batch straight away:
 ```bash
 php artisan batch-uploads:create create_categories /data/categories.csv --force-dispatch
 ```
-> delay by minutes `--delay=60` or indentify with a user `--user=user123`. Delays will require the step [Scheduled Batches](#scheduled-batches) outlined above to be in place.
+> delay by minutes `--delay=60` or indentify with a user `--user=user123`. Delays will require the [schedule command/cron](#dispatch-command) step outlined above to be in place.
 
 ## License
 
