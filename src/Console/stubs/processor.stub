@@ -1,0 +1,26 @@
+<?php
+
+namespace {{ namespace }};
+
+use Dandysi\Laravel\BatchUpload\Processors\ProcessorConfig;
+use Dandysi\Laravel\BatchUpload\Processors\ProcessorInterface;
+
+class {{ class }} implements ProcessorInterface
+{
+    public function config(): ProcessorConfig
+    {
+        return ProcessorConfig::create()
+            ->column('id', 'ID', 'required')
+        ;
+    }
+
+    public function __invoke(array $row): void
+    {
+        //implement logic here
+    }
+
+    public static function name(): string
+    {
+        return '{{ processor_name }}';
+    }
+}
