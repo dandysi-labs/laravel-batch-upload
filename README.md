@@ -1,6 +1,6 @@
 # Laravel Batch Upload
 
-A framework to help manage/automate/process data uploads (like CSV), utilising your own business logic and being much more than a database update tool.
+A framework to help manage/automate/process data uploads (like CSV), utilising your business logic, with potential to be much more than just a tool for updating the database.
 
 * __Scheduling__ - Define when you would like uploads to be processed
 * __Validation__ - Add rules to ensure data is valid before being processed and feedback what the failures are
@@ -85,9 +85,9 @@ $batch->save();
 $service->dispatch($batch);
 
 ```
-If any validation errors occur, they will be recorded against each row and the status of the batch/row will reflect this.
+If validation errors occur, they will be recorded against each row and the status of the batch/row will reflect this.
 
-## <a id="scheduled-batches"></aScheduled Batches
+## <a id="scheduled-batches"></a>Scheduled Batches
 
 Schedule batches with an additional option and not performing step 3 above.
 
@@ -135,7 +135,7 @@ Create and dispatch a batch straight away:
 ```bash
 php artisan batch-uploads:create create_categories /data/categories.csv --force-dispatch
 ```
-> delay by minutes `--delay=60` or indentify with a user `--user=user123`. (Any delay will require the step [Schedule Batch](schedule-batches) to be in place)
+> delay by minutes `--delay=60` or indentify with a user `--user=user123`. (Any delay will require the step [Scheduled Batches](#scheduled-batches) to be in place)
 
 ## License
 
