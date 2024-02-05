@@ -139,4 +139,4 @@ php artisan batch-uploads:create create_categories /data/categories.csv --force-
 
 ## License
 
-Open-sourced software licensed under the [MIT license](LICENCE).
+Open-sourced software licensed under the [MIT license](LICENSE).
