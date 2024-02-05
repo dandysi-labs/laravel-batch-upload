@@ -108,7 +108,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('batch-upload:dispatch')-->everyTenMinutes();
+        $schedule->command('batch-upload:dispatch')->everyTenMinutes();
     }
 ```
 or create your own cron entry to execute the following:
@@ -133,7 +133,7 @@ $options = $service
 Create and dispatch a batch straight away:
 
 ```bash
-php artisan batch-uploads:create create_categories /data/categories.csv --force-dispatch
+php artisan batch-upload:create create_categories /data/categories.csv --force-dispatch
 ```
 > delay by minutes `--delay=60` or indentify with a user `--user=user123`. Delays will require the [schedule command/cron](#dispatch-command) step outlined above to be in place.
 
